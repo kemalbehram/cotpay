@@ -1,0 +1,175 @@
+body{
+	font-family: 'Roboto' !important ;
+}
+
+a{
+	text-decoration: none !important;
+}
+nav.nav ul{
+	padding-left: 0 !important;
+}
+
+nav.nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px 25px;
+	font-size: 20px;
+}
+nav.nav ul li:hover {
+	background: #ccc;
+	border-radius: 5px;
+}
+nav.nav ul li a{
+	color: white !important;
+}
+.page-top{
+	margin-bottom: 20px;
+}
+.header{
+	background: #065387;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-img-content{
+	float: left;
+}
+.header-img-btn{
+	float: right;
+}
+.header-img-btn a.btn-a{
+	margin: 0 10px;
+    color: white !important;
+    font-size: 16px;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background: #085387;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 108px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ccc;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ccc;}
+
+/*mobile menu*/
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background-color: #065387;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a,.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.dropdown-btn{
+	background: none;border: none;
+}
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+}
+.dropdown-container a{
+	border-bottom: 1px solid #ccc;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+ul li.btn-mobile{
+	display: none !important;
+}
+div.btn-mobile{
+	display: none;
+}
+.btn-mobile button{
+	background: none;
+	border: none;
+}
+.btn-mobile button a{
+	color: white !important;
+}
+
+@media only screen and (max-width: 767px) {
+	nav.nav {
+		display: none !important;
+	}
+	ul li.btn-mobile{
+		display: block !important;
+	}	
+	.header-img-btn{
+		display: none;
+	}
+	.header-img-content {
+    	float: right;
+	}
+	div.btn-mobile{
+		display: block;
+		float: left;
+		margin-top: 25px;
+	}
+}

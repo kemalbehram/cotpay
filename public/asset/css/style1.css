@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+
+.line-1{
+    width: 100%;
+}
+
+/* .mission{
+    width: 100%;
+} */
+
+.input-search{
+    margin-top: 10px;
+}
+
+#custom-search-form {
+    margin:0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#custom-search-form .search-query { 
+    width: 100%;
+    height: 48px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+#custom-search-form .search-query::placeholder{
+    font-size: 16px;
+}
+
+#custom-search-form .btn {
+    float: right;
+    position: absolute;
+    background: none;
+    top: 11px;
+    right: 25px;font-size: 18px;
+}
+.button-scan{
+    margin-top: 5px;
+    height: 48px;
+    line-height: 48px;
+    width: 160px;
+    background: #065387;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+.registration{
+    margin-top: 60px;
+}
+
+.registration-img img{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.registration h1{
+    text-align: center;
+    font-weight: initial;
+    line-height: 1.2;
+    font-size: 40px;
+}
+
+.registration p{
+    text-align: center;
+    font-size: 24px;
+}
+
+.button-registration button{
+    text-align: center;
+    height: 48px;
+    width: 220px;
+    background: #0A6BAC;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+.introduce{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.title-introduce h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cotpay h1{
+    color: #065387;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hr{
+    border: 1px solid #707070;
+    width: 220px;
+    size: 1px;
+    display: block;
+    margin: 20px auto;
+}
+
+.hr_mission{
+        border: 1px solid #707070;
+        width: 200px;
+        size: 1px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.content-introduce p{
+    font-size: 24px;
+}
+
+.line-2{
+    margin-top: 25px;
+}
+
+.mission{
+    margin-top: 30px;
+}
+
+.mission p{
+    text-align: justify;
+}
+
+.mission h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.mission-icon i{
+    font-size: 50px;
+}
+
+.mission-title h1{
+    font-weight: bold;
+    color: #065387;
+}
+
+.partner{
+    margin-top: 30px;
+}
+
+.partner-title h1{
+    font-weight: bold;
+    color: #065387;
+}
+
+.hr-parter-title{
+    border: 1px solid #707070;
+    width: 100%;
+    size: 1px;
+    display: block;
+    margin: 20px auto;
+}
+
+.partner-img img{
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+.partner-content{
+    margin-top: 20px;
+}
+
+.hr-parter{
+    border: 1px solid #707070;
+    size: 1px;
+    display: block;
+    margin: 20px auto;
+}
+
+.solution-title-h1 h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #065387;
+    text-align: center;
+}
+
+.solution-button{
+    margin-top: 20px;
+}
+
+.solution-button button{
+    background: none;
+    font-size: 24px;
+    border: 1px solid #065387;
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+.register-now{
+    margin-top: 50px;
+    background: #ADBDCB;
+    min-height: 200px;
+    padding-bottom: 30px;
+}
+
+.register_now-title{
+    margin-top: 25px;
+}
+
+.register_now-h1 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.register_now-button button{
+    margin-top: 20px;
+    text-align: center;
+    height: 48px;
+    width: 220px;
+    background: #065387;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+.row{
+    margin: 0px !important;
+}
+
+@media screen and(max-width: 320px){
+    .hr-parter-title{
+        border: 1px soliad #707070;
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media screen and(max-width: 320px){
+    .hr-parter{
+        border: 1px soliad #707070;
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media screen and(max-width: 320px){
+    .partner-img img{
+        width: 100%;
+    }
+}
+
+.row_css{
+    width: 100%;
+}
+
+.register_now-title{
+    width: 100%;
+}
+
+.register_now-button{
+    width: 100%;
+}

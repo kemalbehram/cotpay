@@ -1,0 +1,433 @@
+
+
+
+/* The container */
+.choose-option {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.choose-option input.radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 9px !important;
+  left: 3px !important;
+  height: 25px !important;
+  width: 25px !important;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #00000045 !important;
+}
+
+/* On mouse-over, add a grey background color */
+.choose-option:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.choose-option input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.choose-option input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.choose-option .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/*
+.choose-wallet {
+  background: #fff;
+  border: 1px solid #00000047;
+}*/
+.choose-wallet .title-text {
+  margin: 20px;
+  padding: 5px 21px;
+  background: #065387;
+  color: #fff;
+}
+.choose-wallet .title-text h1 {
+  margin-bottom: 3px;
+  font-size: 25px;
+}
+.choose-wallet .option {
+  margin-left: 10px;
+}
+.choose-wallet .option .box-option {
+  margin-left: 10px;
+}
+.choose-wallet .option .box-option a {
+  float: left;
+}
+.choose-wallet .option .box-option a i {
+  font-size: 30px;
+  color: #fff;
+  background: #008000bd;
+  padding: 5px 5px 5px 7px;
+  border-radius: 3px;
+}
+.choose-wallet .option .box-option .text-content {
+  margin-left: 60px;
+}
+.choose-wallet .option .box-option .text-content h2 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.choose-wallet .option .box-option .text-content p {
+  font-size: 14px;
+}
+.choose-wallet .connect {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.choose-wallet .connect a {
+  padding: 10px 30px 14px;
+  color: #fff;
+  background: #065387;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.choose-wallet .title-complete {
+  border-bottom: 1px solid #00000040;
+}
+.choose-wallet .title-complete h1 {
+  font-size: 30px;
+}
+.choose-wallet .content {
+  margin-top: 20px;
+  text-align: center;
+}
+.choose-wallet .content h2 {
+  color: #065387;
+  font-weight: bold;
+}
+.choose-wallet .content p {
+  margin-bottom: 0px;
+}
+
+.choose-wallet .content input {
+  width: 84%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 667px){
+  .choose-wallet .content input{
+    width: 87%;
+  }
+}
+@media all and (max-width: 568px){
+  .choose-wallet .content input{
+    width: 92%;
+  }
+}
+@media all and (max-width: 480px){
+  .choose-wallet .content input{
+    width: 94%;
+  }
+}
+.choose-wallet .content .forgot-password {
+  text-align: center;
+}
+.choose-wallet .content .forgot-password a {
+  color: #124291!important;
+}
+.choose-wallet .no-account {
+  text-align: center;
+}
+.choose-wallet .no-account a {
+  color: #065387!important;
+  font-weight: bold;
+}
+.choose-wallet .title-manager .title {
+  float: left;
+  margin: 40px 0px 0px 20px;
+}
+.choose-wallet .title-manager .title h1 {
+  font-size: 21px;
+  color: #174A84;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.choose-wallet .title-manager .title p {
+  font-size: 14px;
+  color: #A5C9FF;
+}
+.choose-wallet .title-manager .excessamount {
+  float: right;
+  margin: 40px;
+  text-align: right;
+}
+.choose-wallet .title-manager .excessamount h2 {
+  color: #174A84;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.choose-wallet .title-manager .excessamount p {
+  font-size: 35px;
+  color: #174A84;
+  font-weight: bold;
+}
+.choose-wallet .change-password p {
+  margin-bottom: 21px;
+}
+.choose-wallet .change-password input {
+  width: 60%;
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.choose-wallet .change-password .submit {
+  margin: 20px 0px;
+}
+.choose-wallet .change-password .submit a {
+  padding: 5px 15px 7px;
+  background: #174a84;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.choose-wallet .change-password .submit a:hover {
+  text-decoration: none;
+  background: #0870b7;
+}
+.choose-wallet .deposits-withdrawals {
+  margin: 20px;
+  border: 1px solid #DDDDDD;
+}
+.choose-wallet .deposits-withdrawals .title-text {
+  margin: 0px -1px;
+}
+.choose-wallet .deposits-withdrawals .title-text h1 {
+  font-size: 16px;
+  font-family: regular;
+  margin-bottom: 0px;
+  padding: 5px 0px;
+}
+.choose-wallet .deposits-withdrawals .amount-of-money {
+  margin: 20px;
+}
+.choose-wallet .deposits-withdrawals .amount-of-money p {
+  font-size: 24px;
+  font-family: regular;
+  color: #065387;
+}
+.choose-wallet .deposits {
+  /* The container */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.choose-wallet .deposits .submit {
+  font-size: 16px;
+  padding: 7px 30px 10px;
+}
+.choose-wallet .deposits h1 {
+  font-size: 16px;
+  font-family: regular;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+.choose-wallet .deposits .box-option i {
+  font-size: 20px !important;
+  margin-top: 6px;
+}
+.choose-wallet .deposits .box-option .text-content {
+  margin-left: 45px !important;
+}
+.choose-wallet .deposits .box-option .text-content h2 {
+  font-size: 16px;
+}
+.choose-wallet .deposits .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.choose-wallet .deposits .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.choose-wallet .deposits .checkmark {
+  position: absolute;
+  top: 30px !important;
+  left: 3px !important;
+  height: 20px !important;
+  width: 20px !important;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #00000045 !important;
+}
+.choose-wallet .deposits .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.choose-wallet .deposits .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.choose-wallet .deposits .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.choose-wallet .deposits .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.choose-wallet .deposits .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.choose-wallet .withdrawals {
+  /* The container */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.choose-wallet .withdrawals .title-text {
+  background: #40B649;
+}
+.choose-wallet .withdrawals .submit {
+  font-size: 16px;
+  padding: 7px 30px 10px;
+  background: #40B649;
+}
+.choose-wallet .withdrawals h1 {
+  font-size: 16px;
+  font-family: regular;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+.choose-wallet .withdrawals .box-option i {
+  font-size: 20px !important;
+  margin-top: 6px;
+}
+.choose-wallet .withdrawals .box-option .text-content {
+  margin-left: 45px !important;
+}
+.choose-wallet .withdrawals .box-option .text-content h2 {
+  font-size: 16px;
+}
+.choose-wallet .withdrawals .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.choose-wallet .withdrawals .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.choose-wallet .withdrawals .checkmark {
+  position: absolute;
+  top: 30px !important;
+  left: 3px !important;
+  height: 20px !important;
+  width: 20px !important;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #00000045 !important;
+}
+.choose-wallet .withdrawals .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.choose-wallet .withdrawals .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.choose-wallet .withdrawals .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.choose-wallet .withdrawals .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.choose-wallet .withdrawals .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.choose-wallet .input-code {
+  margin: 20px;
+}
+.choose-wallet .input-code input {
+  width: 80%;
+  margin-left: 20px;
+  padding: 7px;
+  outline: none;
+}
+
+@media all and (max-width: 424px) {
+  .choose-wallet .title-manager .title {
+    float: none !important;
+  }
+
+  .choose-wallet .title-manager .excessamount {
+    float: none;
+    margin-left: 20px;
+    text-align: left;
+  }
+}

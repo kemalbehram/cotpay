@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 767px){
+    .row_css{
+        margin: 0 !important;
+    }
+}
+@media screen and (max-width: 991px){
+    .report_button_1{
+        margin-top: 0px !important;
+    }
+}
+@media screen and (min-width: 767px){
+    .report_button_1{
+        width: 150px;
+    }
+}
+@media screen and (min-width: 377px){
+    .info_button button{
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 320px){
+    .info_button{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .introduce p{
+        margin-right: 10px;
+    }
+}
+
+.table_1 thead td{
+    background: #174A84;
+    color: white;
+}
+
+.row_css{
+    margin: 0 !important;
+}
+
+.report_title h1{
+    color: #174A84;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.report_title p{
+    color: #A5C9FF;
+    font-size: 14px;
+}
+
+.report_title_2 p{
+    font-size: 30px;
+    color: #174A84;
+    font-weight: bold;
+}
+
+.report_button_1{
+    margin-top: 50px;
+}
+
+.report_button_1 button{
+    border: none;
+    border-radius: 20px;
+    background: #174A84;
+    width: 100%;
+    color: white;
+    height: 35px;
+}
+
+table{
+    border:1px solid #174A84;
+    width: 100%;
+}
+
+tr{
+    color: #174A84;
+    border:1px solid #174A84;
+}
+
+td{
+    height: 45px;
+    border:1px solid #174A84;
+    color: #174A84;
+}
+
+.table_2{
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.table_2 table tr:hover{
+    background: #E5F1FB;
+}
+
+.table_2_table td{
+    color: black;
+}
+
+.table_3{
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.info_report p{
+    margin: 11px;
+    color: black;
+}
+
+.rating{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #174A84;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.code{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    border: 1px solid #174A84;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.rating p{
+    margin-left: 10px;
+}
+
+.code p{
+    margin-left: 10px;
+}
+
+.table__3 td{
+    border: none;
+}
+
+.processing_table{
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.processing_table{
+    padding: 15px;
+}
+
+.introduce p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.introduce table thead td{
+    background: #174A84;
+    color: white;
+    font-weight: bold;
+}
+
+.info_button .it{
+    cursor: initial;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid #174A84;
+    width: 150px;
+    height: 100%;
+    line-height: 35px;
+}
+
+.info_button .yc{    
+    cursor: initial;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid #174A84;
+    width: 150px;
+    margin-top: 20px;
+    line-height: 35px;
+    height: 100%;
+}
